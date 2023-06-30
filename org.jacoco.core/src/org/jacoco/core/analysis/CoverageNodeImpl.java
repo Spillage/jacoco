@@ -166,4 +166,7 @@ public class CoverageNodeImpl implements ICoverageNode {
 		return sb.toString();
 	}
 
+	public void setLineCounter(CounterImpl lineCounter) {
+		this.lineCounter = lineCounter;
+	   }
 }

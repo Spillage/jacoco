@@ -25,4 +25,6 @@ public interface ISourceFileCoverage extends ISourceNode {
 	 */
 	String getPackageName();
 
+	void replaceLine(final int nr, LineImpl line);
+
 }

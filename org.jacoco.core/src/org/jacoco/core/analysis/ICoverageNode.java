@@ -150,4 +150,6 @@ public interface ICoverageNode {
 	 */
 	ICoverageNode getPlainCopy();
 
+	void setLineCounter(CounterImpl counter);
+
 }

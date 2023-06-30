@@ -46,4 +46,6 @@ public interface ISourceNode extends ICoverageNode {
 	 */
 	ILine getLine(int nr);
 
+	void replaceLine(final int nr, LineImpl line);
+
 }
