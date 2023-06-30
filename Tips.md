@@ -1,4 +1,5 @@
 # Please count the coverage within the codes.
+## Please call these methods with git diff 
 
 ``` java
 import org.apache.maven.plugin.logging.Log;
@@ -16,7 +17,6 @@ import java.util.*;
 
 public class IncrementCodeFilter {
     private static final Log log = new SystemStreamLog();
-
     public static void filterIncrementCode(IBundleCoverage bundle, Map<String, String> map) {
         log.info("updateCoverage for " + bundle.getName());
         updateCoverage(map, bundle);
@@ -157,7 +157,7 @@ private static void updateMethodCounter(IClassCoverage aClass,
         return false;
     }
 
-private static Integer countChangedMethodCoverage(IBundleCoverage bundleCoverage,Map<String,String> signatureMap) {
+    private static Integer countChangedMethodCoverage(IBundleCoverage bundleCoverage,Map<String,String> signatureMap) {
         log.info("count changed method coverage...");
         for(Map.Entry<String,String> entry : signatureMap.entrySet()) {
             log.info(" methodMap key is " + entry.getKey() + " ; value is " + entry.getValue());
