@@ -1,5 +1,6 @@
 # Please count the coverage within the codes.
-## Please call these methods with git diff 
+## Please call these methods with git diff
+### maven plugin log can be ignored.
 
 ``` java
 import org.apache.maven.plugin.logging.Log;
