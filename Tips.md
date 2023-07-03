@@ -37,6 +37,7 @@ public class IncrementCodeFilter {
     index e69de29..69b5711 100644
     --- a/hello.php
     +++ b/hello.php
+    @@ -0,0 +1,3 @@
     **/
         int bundleCoveredLine = 0;
         int bundleMissedLine = 0;
