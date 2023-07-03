@@ -30,6 +30,14 @@ public class IncrementCodeFilter {
 
     private static void updateCoverage(Map<String, String> map,
                                        IBundleCoverage bundleCoverage) {
+
+    /**
+    $ git diff
+    diff --git a/hello.php b/hello.php
+    index e69de29..69b5711 100644
+    --- a/hello.php
+    +++ b/hello.php
+    **/
         int bundleCoveredLine = 0;
         int bundleMissedLine = 0;
         Collection<IPackageCoverage> packageCoverages = bundleCoverage
